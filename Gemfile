@@ -18,6 +18,9 @@ gem 'less-rails-semantic_ui'
 gem 'autoprefixer-rails'
 gem 'sprockets-rails', '~> 2.3'
 
+# Omniauth
+gem 'omniauth-automatic'
+
 group :production do
   gem 'passenger'
 end
@@ -27,6 +30,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-state'
   gem 'pry-byebug'
+  gem 'thin'
 end
 
 group :development do

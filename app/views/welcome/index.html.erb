@@ -1,0 +1,10 @@
+<% if current_user %>
+  <p>Hello, <%= current_user.first_name %>
+  <%= link_to "Logout", logout_path %>
+<% else %>
+  <a href="<%= login_path %>">
+    <img src="<%= asset_path('auth_automatic-login-hover-sm.svg') %>" id="log-in-button" />
+  </a>
+<% end %>
+
+
