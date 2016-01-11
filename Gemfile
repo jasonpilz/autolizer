@@ -30,6 +30,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-state'
   gem 'pry-byebug'
+  gem 'thin'
 end
 
 group :development do
