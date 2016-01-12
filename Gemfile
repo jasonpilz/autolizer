@@ -16,11 +16,8 @@ gem 'thin'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Semantic UI assets
-gem 'less-rails-semantic_ui'
-gem 'autoprefixer-rails'
-gem 'sprockets-rails', '~> 2.3'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
-# Omniauth
 gem 'omniauth-automatic'
 
 group :production do

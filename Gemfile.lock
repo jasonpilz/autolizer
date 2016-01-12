@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/doabit/semantic-ui-sass.git
+  revision: b3269ee768c701ecd3892deb5bd2e77708fbada4
+  specs:
+    semantic-ui-sass (2.1.6.0)
+      sass (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,9 +44,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
-    autoprefixer-rails (6.2.3)
-      execjs
-      json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -52,7 +56,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    commonjs (0.2.7)
     concurrent-ruby (1.0.0)
     daemons (1.2.3)
     debug_inspector (0.0.2)
@@ -76,15 +79,6 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     jwt (1.5.2)
-    less (2.6.0)
-      commonjs (~> 0.2.7)
-    less-rails (2.7.0)
-      actionpack (>= 4.0)
-      less (~> 2.6.0)
-      sprockets (> 2, < 4)
-      tilt
-    less-rails-semantic_ui (2.1.7.0)
-      less-rails (>= 2.6.0, <= 2.7.0)
     libv8 (3.16.14.13)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -209,13 +203,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  autoprefixer-rails
   byebug
   coffee-rails (~> 4.1.0)
   figaro
   jbuilder (~> 2.0)
   jquery-rails
-  less-rails-semantic_ui
   omniauth-automatic
   passenger
   pg (~> 0.15)
@@ -226,8 +218,8 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  semantic-ui-sass!
   spring
-  sprockets-rails (~> 2.3)
   therubyracer
   thin
   turbolinks
