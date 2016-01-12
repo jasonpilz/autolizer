@@ -22,7 +22,8 @@ gem 'sprockets-rails', '~> 2.3'
 gem 'omniauth-automatic'
 
 group :production do
-  gem 'passenger'
+  # gem 'passenger'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
