@@ -1,0 +1,25 @@
+<div class="ui top fixed inverted menu" id="top-nav">
+  <div class="item">
+    <a href="<% dashboard_path %>" class="nav-item item">
+      <h4 class="white">DASHBOARD</h4>
+    </a>
+  </div>
+  <div class="item">
+    <a href="<%= vehicles_path %>" class="nav-item item">
+      <h4 class="white">VEHICLES</h4>
+    </a>
+  </div>
+  <div class="item">
+    <a href="<%= trips_path %>" class="nav-item item">
+      <h4 class="white">TRIPS</h4>
+    </a>
+  </div>
+  <div class="ui container nav-item">
+    <img src="<%= asset_path('A-logo-sm.png') %>" id="nav-logo">
+  </div>
+  <div class="float right item">
+    <a href="<%= logout_path %>" class="nav-item item">
+      <h4 class="white">LOGOUT</h4>
+    </a>
+  </div>
+</div>

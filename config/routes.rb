@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get '/auth/automatic/callback', to: "sessions#create"
   get '/logout',                  to: "sessions#destroy"
   get '/dashboard',               to: "dashboards#index"
+  resources :trips,               only: [:index, :show]
+  resources :vehicles,            only: [:index, :show]
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
