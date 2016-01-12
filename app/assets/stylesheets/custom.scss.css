@@ -1,3 +1,36 @@
 #log-in-button {
   max-width: 300px;
 }
+
+#login-contain {
+  height: 100%;
+}
+
+.login-background {
+  background-color: #292929;
+}
+
+.clear {
+  background-color: rgba(255,255,255,0.0);
+}
+
+.m-width-450 {
+  max-width: 450px;
+}
+
+.product-title {
+  font-size: 5em;
+  letter-spacing: .1em;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+
+.white {
+  color: white;
+}
+
+img {
+  max-width: 250px !important;
+  margin-bottom: 20px;
+}
+

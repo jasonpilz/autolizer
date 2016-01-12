@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-  get '/auth/automatic', as: :login
+  root                            to: 'welcome#index'
+  get '/auth/automatic',          as: :login
   get '/auth/automatic/callback', to: "sessions#create"
-  get '/logout', to: "sessions#destroy"
+  get '/logout',                  to: "sessions#destroy"
+  get '/dashboard',               to: "dashboards#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
