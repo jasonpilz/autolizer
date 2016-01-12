@@ -15,3 +15,11 @@
 //= require turbolinks
 //= require semantic_ui/semantic_ui
 //= require_tree .
+
+$(document).ready(function() {
+
+  $('#login-logo')
+    .hide()
+    .transition('fade', '4000ms')
+
+})
