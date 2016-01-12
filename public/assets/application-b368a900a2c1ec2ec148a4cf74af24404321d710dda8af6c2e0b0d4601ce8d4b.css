@@ -6,8 +6,27 @@
   height: 100%;
 }
 
+#login-logo {
+  max-width: 250px !important;
+  margin-bottom: 20px;
+}
+
+#nav-logo {
+  margin-left: 75px;
+  max-height: 130px;
+}
+
 .login-background {
-  background-color: #292929;
+  /* background-color: #292929; */
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(right, #232526 , #414345);
+  background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.lykan-background {
+  /* background-image: url(/assets/lykan_hypersport_4.jpg); */
+  background: url(/assets/bw_dark_lykan.jpg) no-repeat center center;
 }
 
 .clear {
@@ -25,13 +44,17 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .white {
   color: white;
 }
 
-img {
-  max-width: 250px !important;
-  margin-bottom: 20px;
+#top-nav {
+  background-color: rgba(10,10,10,0.2);
 }
 
 /*

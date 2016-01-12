@@ -11,6 +11,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'figaro'
+gem 'thin'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Semantic UI assets
@@ -22,7 +24,7 @@ gem 'sprockets-rails', '~> 2.3'
 gem 'omniauth-automatic'
 
 group :production do
-  # gem 'passenger'
+  gem 'passenger'
   gem 'rails_12factor'
 end
 
@@ -31,7 +33,6 @@ group :development, :test do
   gem 'pry'
   gem 'pry-state'
   gem 'pry-byebug'
-  gem 'thin'
 end
 
 group :development do
