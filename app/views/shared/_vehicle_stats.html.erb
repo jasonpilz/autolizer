@@ -1,0 +1,41 @@
+<div class="ui center aligned container vehicle-stat-header">
+  <h1 class="white"><%= @vehicle.year %> <%= @vehicle.model %></h1>
+</div>
+
+<div class="feature alternate ui stripe vertical segment">
+  <div class="ui three column center aligned divided relaxed stackable stat-row grid container">
+    <div class="row">
+      <div class="column">
+        <div class="ui inverted statistic">
+          <div class="value">
+            18.9
+          </div>
+          <div class="label">
+            Current MPG
+          </div>
+        </div>
+      </div>
+      <div class="column mid-stat">
+        <div class="ui inverted statistic">
+          <div class="value">
+            <%= @vehicle.fuel_level_percent %> %
+          </div>
+          <div class="label">
+            Current Fuel Level
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui inverted statistic">
+          <div class="value">
+            <%= @vehicle.active_dtcs.count %>
+          </div>
+          <div class="label">
+            Engine Trouble Codes
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'thin'
+gem 'hurley'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Semantic UI assets
