@@ -11,9 +11,29 @@
   margin-bottom: 20px;
 }
 
+.stat-row {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.vehicle-stat-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 #nav-logo {
   margin-left: 75px;
   max-height: 130px;
+}
+
+.mid-stat {
+  border-left: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.5);
+}
+
+.header-buffer {
+  border-bottom: 0px !important;
+  border-top: 0px !important;
 }
 
 .login-background {
@@ -33,6 +53,10 @@
 
 .m-width-450 {
   max-width: 450px;
+}
+
+.h-350 {
+  height: 19em;
 }
 
 .product-title {
