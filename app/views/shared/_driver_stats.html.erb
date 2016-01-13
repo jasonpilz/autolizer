@@ -1,5 +1,5 @@
 <div class="ui center aligned container vehicle-stat-header">
-  <h1 class="white"><%= @vehicle.year %> <%= @vehicle.model %></h1>
+  <h1 class="white">Driver</h1>
 </div>
 
 <div class="feature alternate ui stripe vertical segment">
@@ -8,30 +8,30 @@
       <div class="column">
         <div class="ui inverted statistic">
           <div class="value">
-            <%= (@last_trip.average_kmpl * 2.35214583).round(2) %>
+            <%= @last_trip.hard_brakes %>
           </div>
           <div class="label">
-            Current MPG
+            Hard Brakes
           </div>
         </div>
       </div>
       <div class="column mid-stat">
         <div class="ui inverted statistic">
           <div class="value">
-            <%= @vehicle.fuel_level_percent %> %
+            <%= @last_trip.hard_accels %>
           </div>
           <div class="label">
-            Current Fuel Level
+            Hard Accels
           </div>
         </div>
       </div>
       <div class="column">
         <div class="ui inverted statistic">
           <div class="value">
-            <%= @vehicle.active_dtcs.count %>
+            <%= @last_trip.duration_over_70_s %>
           </div>
           <div class="label">
-            Engine Trouble Codes
+            Seconds over 70 MPH
           </div>
         </div>
       </div>

@@ -16,6 +16,10 @@
   border-top: 1px solid rgba(255,255,255,0.5);
 }
 
+.stat-bottom {
+  // border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
 .vehicle-stat-header {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -44,7 +48,7 @@
 }
 
 .lykan-background {
-  background: image-url("bw_dark_lykan.jpg") no-repeat center center;
+  background: image-url("bw_dark_lykan.jpg") no-repeat fixed center center;
 }
 
 .clear {
