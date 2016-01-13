@@ -1,7 +1,9 @@
 default: &default
+
   adapter: postgresql
   encoding: unicode
   pool: 5
+
 
 development:
   <<: *default
@@ -14,5 +16,4 @@ test:
 production:
   <<: *default
   database: autolizer_production
-  # username: autolizer
-  # password: <%= ENV['AUTOLIZER_DATABASE_PASSWORD'] %>
+  password: <%= ENV['AUTOLIZER_DATABASE_PASSWORD'] %>

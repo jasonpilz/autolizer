@@ -1,0 +1,61 @@
+<div class="ui center aligned container vehicle-stat-header">
+  <h1 class="white">Last Trip</h1>
+</div>
+
+<div class="feature alternate ui stripe vertical segment">
+  <div class="ui three column center aligned divided relaxed stackable stat-row grid container">
+    <div class="row">
+      <div class="column">
+        <div class="ui inverted statistic">
+          <div class="value">
+            <%= @last_trip.distance_m %>
+          </div>
+          <div class="label">
+            Distance Meters
+          </div>
+        </div>
+      </div>
+      <div class="column mid-stat">
+        <div class="ui inverted statistic">
+          <div class="value">
+            <%= @last_trip.duration_s %>
+          </div>
+          <div class="label">
+            Seconds
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui inverted statistic">
+          <div class="value">
+            $ <%= @last_trip.fuel_cost_usd %>
+          </div>
+          <div class="label">
+            Fuel Cost USD
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui center aligned divided relaxed stackable stat-bottom grid container">
+    <div class="row">
+      <div class="ui inverted relaxed divided list">
+        <div class="item">
+          <i class="large inverted marker middle aligned icon"></i>
+          <div class="content">
+            <p class="header">Start Location</p>
+            <div class="description"><%= @last_trip.start_address[:display_name] %></div>
+          </div>
+        </div>
+        <div class="item">
+          <i class="large inverted marker middle aligned icon"></i>
+          <div class="content">
+            <p class="header">End Location</p>
+            <div class="description"><%= @last_trip.end_address[:display_name] %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
