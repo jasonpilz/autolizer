@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/current',                 to: 'users#current'
   root                            to: 'welcome#index'
   get '/auth/automatic',          as: :login
   get '/auth/automatic/callback', to: "sessions#create"

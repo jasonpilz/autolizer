@@ -1,0 +1,163 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/jasonpilz/code/autolizer/app/models/user.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/controllers/users_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/helpers/dashboards_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/controllers/welcome_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/controllers/dashboards_controller.rb": [
+        1,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/models/vehicle.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/jasonpilz/code/autolizer/app/services/automatic_service.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1452738342
+  }
+}
