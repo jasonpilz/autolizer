@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.5'
 gem 'pg', '~> 0.15'
 gem 'sass-rails', '~> 5.0'
@@ -14,11 +13,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
 gem 'thin'
 gem 'hurley'
-# gem 'bcrypt', '~> 3.1.7'
+gem 'vcr'
 
-# Semantic UI assets
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-
 gem 'omniauth-automatic'
 
 group :production do
@@ -27,6 +24,13 @@ group :production do
 end
 
 group :development, :test do
+  gem 'mrspec'
+  gem 'database_cleaner'
+  gem 'simplecov'
+  gem 'mocha'
+  gem 'launchy'
+  gem 'shoulda'
+  gem 'capybara'
   gem 'byebug'
   gem 'pry'
   gem 'pry-state'
@@ -36,5 +40,9 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :test do
+  gem 'webmock'
 end
 
