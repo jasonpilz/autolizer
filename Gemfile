@@ -14,6 +14,7 @@ gem 'figaro'
 gem 'thin'
 gem 'hurley'
 gem 'vcr'
+gem 'newrelic_rpm'
 
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'omniauth-automatic'
@@ -43,6 +44,6 @@ group :development do
 end
 
 group :test do
-  gem 'webmock'
+  # gem 'webmock'
 end
 

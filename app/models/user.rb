@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :vehicles
 
   def self.from_omniauth(auth_info)
     where(uid: auth_info["info"]["id"]).first_or_create do |new_user|

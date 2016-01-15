@@ -11,6 +11,21 @@
   margin-bottom: 20px;
 }
 
+.footer-div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer-logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer-stripe {
+  background-color: rgba(10,10,10,0.2);
+}
+
+
 .stat-row {
   border-bottom: 1px solid rgba(255,255,255,0.5);
   border-top: 1px solid rgba(255,255,255,0.5);
@@ -49,6 +64,10 @@
 
 .lykan-background {
   background: image-url("bw_dark_lykan.jpg") no-repeat fixed center center;
+}
+
+.ferrari-background {
+  background: image-url("ferrari.jpg") no-repeat fixed center center;
 }
 
 .clear {

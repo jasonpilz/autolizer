@@ -5,7 +5,6 @@ require 'simplecov'
 require 'minitest/pride'
 require 'mocha/mini_test'
 require 'mrspec'
-require 'webmock'
 require 'vcr'
 
 SimpleCov.start("rails")
@@ -40,6 +39,11 @@ class ActionDispatch::IntegrationTest
         expires: true
       }
     })
+  end
+
+  def login_user
+    visit "/"
+    click_link('automatic-button')
   end
 end
 
