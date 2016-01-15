@@ -1,0 +1,16 @@
+<div class="ui center aligned container vehicle-stat-header">
+  <h1 class="white"><%= @vehicle.year %> <%= @vehicle.model %></h1>
+</div>
+
+<div class="feature alternate ui stripe vertical segment" id="feature-stripe">
+  <div class="ui three column center aligned divided relaxed stackable stat-row grid container">
+    <div class="row">
+      <div class="ui text container">
+        <h2>VIN: <%= @vehicle.vin.upcase %> / Submodel: <%= @vehicle.submodel %></h2>
+        <a href="<%= vehicle_path(@vehicle) %>">
+          <button class="ui button">Details</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
