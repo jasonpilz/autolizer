@@ -1,21 +1,19 @@
-class Vehicle
-  attr_reader :user
+class Vehicle < ActiveRecord::Base
+  belongs_to :user
 
-  def initialize(user)
-    @user = user
-  end
-
-  def service
-    AutomaticService.new(user.oauth_access_token)
-  end
-
-  def all
-    service.vehicles.map { |vehicle| build_object(vehicle) }
-  end
-
-  private
-
-    def build_object(data)
-      OpenStruct.new(data)
+  def self.create_from_api(data, user)
+    data.each do |vehicle|
+      unless veh = Vehicle.find_by(vid: vehicle[:id])
+        Vehicle.create!( { url:        vehicle[:url],
+                           vid:        vehicle[:id],
+                           vin:        vehicle[:vin],
+                           make:       vehicle[:make],
+                           model:      vehicle[:model],
+                           submodel:   vehicle[:submodel],
+                           year:       vehicle[:year],
+                           fuel_grade: vehicle[:fuel_grade],
+                           user_id:    user.id } )
+      end
     end
+  end
 end

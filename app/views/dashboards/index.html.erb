@@ -1,25 +1,21 @@
 <%= render partial: 'layouts/nav' %>
 <body class="lykan-background" />
 
-<div class="header-buffer ui vertical segment h-350">
-</div>
+<div class="header-buffer ui vertical segment h-350"></div>
 
 <% @vehicles.each do |vehicle| %>
   <% @vehicle = vehicle %>
   <%= render 'shared/vehicle_stats', {locals: @vehicle} %>
 <% end %>
 
-<div class="header-buffer ui vertical segment h-350">
-</div>
+<div class="header-buffer ui vertical segment h-350"></div>
 
 <%= render partial: 'shared/last_trip_stats' %>
 
-<div class="header-buffer ui vertical segment h-350">
-</div>
+<div class="header-buffer ui vertical segment h-350"></div>
 
 <%= render partial: 'shared/driver_stats' %>
 
-<div class="header-buffer ui vertical segment h-350">
-</div>
+<div class="header-buffer ui vertical segment h-350"></div>
 
 <%= render 'layouts/footer' %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vid: MyString
+  url: MyString
+  make: MyString
+  model: MyString
+  vin: MyString
+  submodel: MyString
+  year: 1
+  fuel_grade: MyString
+  user_id: 
+
+two:
+  vid: MyString
+  url: MyString
+  make: MyString
+  model: MyString
+  vin: MyString
+  submodel: MyString
+  year: 1
+  fuel_grade: MyString
+  user_id: 

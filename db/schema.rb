@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160111005917) do
+ActiveRecord::Schema.define(version: 20160114212254) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,4 +27,21 @@ ActiveRecord::Schema.define(version: 20160111005917) do
     t.datetime "updated_at",         null: false
   end
 
+  create_table "vehicles", force: :cascade do |t|
+    t.string   "vid"
+    t.string   "url"
+    t.string   "make"
+    t.string   "model"
+    t.string   "vin"
+    t.string   "submodel"
+    t.integer  "year"
+    t.string   "fuel_grade"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "vehicles", ["user_id"], name: "index_vehicles_on_user_id", using: :btree
+
+  add_foreign_key "vehicles", "users"
 end
