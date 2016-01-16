@@ -1,7 +1,9 @@
-<%= render partial: 'layouts/nav' %>
-<body class="lykan-background" />
+<% cache("background") do %>
+  <%= render partial: 'layouts/nav' %>
+  <body class="lykan-background" />
 
-<div class="header-buffer ui vertical segment h-350"></div>
+  <div class="header-buffer ui vertical segment h-350"></div>
+<% end %>
 
 <% @vehicles.each do |vehicle| %>
   <% @vehicle = vehicle %>
