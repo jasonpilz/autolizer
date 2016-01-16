@@ -5,6 +5,7 @@ require 'simplecov'
 require 'minitest/pride'
 require 'mocha/mini_test'
 require 'mrspec'
+require 'webmock'
 require 'vcr'
 
 SimpleCov.start("rails")
@@ -12,6 +13,11 @@ SimpleCov.start("rails")
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
+
+  VCR.configure do |config|
+    config.cassette_library_dir = "test/cassettes"
+    config.hook_into :webmock
+  end
 end
 
 class ActionDispatch::IntegrationTest
