@@ -53,6 +53,18 @@ class ActionDispatch::IntegrationTest
   end
 end
 
+class ActionController::TestCase
+  include Capybara::DSL
+
+  def login_user
+    visit "/"
+    click_link('automatic-button')
+  end
+
+  def set_current_user
+    session[:user_id] = users(:jason).id
+  end
+end
 
 DatabaseCleaner.strategy = :transaction
 

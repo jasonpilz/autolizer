@@ -1,17 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  oauth_access_token: MyString
-  uid: MyString
-  token_expires_at: 1
-
-two:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  oauth_access_token: MyString
-  uid: MyString
-  token_expires_at: 1
+jason:
+  first_name: "Jason"
+  last_name: "Pilz"
+  email: "jasonpilz@gmail.com"
+  oauth_access_token: <%= ENV['AUTOMATIC_TEST_ACCESS_TOKEN'] %>
+  uid: "U_66bd7351501dae06"
+  token_expires_at: 1483833599
