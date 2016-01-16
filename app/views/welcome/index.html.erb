@@ -1,14 +1,17 @@
-<body class="login-background" />
+<% cache("background-logo") do %>
+  <body class="login-background" />
 
-<div class="ui middle aligned center aligned grid" id="login-contain">
-  <div class="column m-width-450 clear">
-    <div class="ui container m-width-450">
-      <img src="<%= asset_path('A-logo.png') %>" id="login-logo">
-    </div>
-    <div class="ui container m-width-450">
-      <h1 class="white product-title">
-        Autolizer
-      </h1>
+  <div class="ui middle aligned center aligned grid" id="login-contain">
+    <div class="column m-width-450 clear">
+      <div class="ui container m-width-450">
+        <img src="<%= asset_path('A-logo.png') %>" id="login-logo">
+      </div>
+      <div class="ui container m-width-450">
+        <h1 class="white product-title">
+          Autolizer
+        </h1>
+<% end %>
+
     <% if current_user %>
       <h1 class="white">Welcome, <%= current_user.first_name %></h1>
       <div class="ui container">
@@ -17,9 +20,14 @@
         </a>
       </div>
     <% else %>
-      <a href="<%= login_path %>" id="automatic-button">
-        <img src="<%= asset_path('auth_automatic-login-hover-sm.svg') %>" id="log-in-button" />
-      </a>
+
+    <% cache("login-button") do %>
+        <a href="<%= login_path %>" id="automatic-button">
+          <img src="<%= asset_path('auth_automatic-login-hover-sm.svg') %>" id="log-in-button" />
+        </a>
+
+      <% end %>
     <% end %>
+
   </div>
 </div>
