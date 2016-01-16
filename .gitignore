@@ -21,3 +21,6 @@
 
 # Ignore simplecov files
 /coverage
+
+# Ignore cassettes
+/test/cassettes

@@ -44,6 +44,6 @@ group :development do
 end
 
 group :test do
-  # gem 'webmock'
+  gem 'webmock'
 end
 

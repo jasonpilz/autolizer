@@ -64,6 +64,8 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.0)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     daemons (1.2.3)
     database_cleaner (1.5.1)
     debug_inspector (0.0.2)
@@ -77,6 +79,7 @@ GEM
       thor (~> 0.14)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hashdiff (0.2.3)
     hashie (3.4.3)
     hurley (0.2)
     i18n (0.7.0)
@@ -182,6 +185,7 @@ GEM
     rspec-core (3.4.1)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
+    safe_yaml (1.0.4)
     sass (3.4.21)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -235,6 +239,10 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    webmock (1.22.6)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
     what_weve_got_here_is_an_error_to_communicate (0.0.7)
       binding_of_caller (~> 0.7.2)
       interception (~> 0.5)
@@ -278,6 +286,7 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   vcr
   web-console (~> 2.0)
+  webmock
 
 BUNDLED WITH
    1.11.2

@@ -11,6 +11,8 @@ class UserLogsInWithAutomaticTest < ActionDispatch::IntegrationTest
       assert page.has_link?("LOGOUT")
       assert page.has_content?("2012")
       assert page.has_content?("Odyssey")
+
+      click_link("LOGOUT")
     end
   end
 
