@@ -3,13 +3,12 @@
 
 <div class="header-buffer ui vertical segment h-350"></div>
 
-<div class="ui vertical stripe segment" id="vehicles-stripe">
-  <% @vehicles.each do |vehicle| %>
+<% @vehicles.each do |vehicle| %>
+  <div class="ui vertical stripe segment" id="vehicles-stripe">
     <% @vehicle = vehicle %>
     <%= render 'shared/vehicle_overview', {locals: @vehicle} %>
-  <% end %>
-</div>
-
-<div class="header-buffer ui vertical segment h-350"></div>
+  </div>
+    <div class="header-buffer ui vertical segment h-300"></div>
+<% end %>
 
 <%= render 'layouts/footer' %>

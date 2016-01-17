@@ -15,6 +15,7 @@ gem 'thin'
 gem 'hurley'
 gem 'vcr'
 gem 'newrelic_rpm'
+gem 'paloma'
 
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'omniauth-automatic'

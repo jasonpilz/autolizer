@@ -33,6 +33,13 @@
   background-color: rgba(10,10,10,0.2);
 }
 
+#specs-list {
+  background-color: rgba(255,255,255,0.4);
+}
+
+#maint-list {
+  background-color: rgba(255,255,255,0.4);
+}
 
 .stat-row {
   border-bottom: 1px solid rgba(255,255,255,0.5);
@@ -78,8 +85,32 @@
   background: image-url("lykan-2-bw.jpg") no-repeat fixed center center;
 }
 
+.lykan-3 {
+  background: image-url("lykan-3.jpg") no-repeat fixed center center;
+}
+
 .clear {
   background-color: rgba(255,255,255,0.0);
+}
+
+#category-column {
+  min-width: 15em;
+}
+
+#maint-category-column {
+  min-width: 20em;
+}
+
+#specs-column {
+  min-width: 20em;
+  text-align: left;
+  padding-left: 2em;
+}
+
+#maint-items-column {
+  min-width: 50em;
+  text-align: left;
+  padding-left: 2em;
 }
 
 .m-width-450 {
@@ -88,6 +119,18 @@
 
 .h-350 {
   height: 19em;
+}
+
+.h-300 {
+  height: 14em;
+}
+
+.h-250 {
+  height: 12em;
+}
+
+#tab-form-container {
+  padding-bottom: 4em;
 }
 
 .product-title {
