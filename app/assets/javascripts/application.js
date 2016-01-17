@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require semantic-ui
+//= require paloma
 //= require turbolinks
 //= require_tree .
 

@@ -14,7 +14,7 @@ class Trip
   end
 
   def last
-    build_object(service.trips.last)
+    build_object(service.trips.first)
   end
 
   private

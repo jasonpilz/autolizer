@@ -1,2 +1,21 @@
-<h1>Vehicles#show</h1>
-<p>Find me in app/views/vehicles/show.html.erb</p>
+<%= render partial: 'layouts/nav' %>
+<body class="<%= controller_name %> <%= action_name %> lykan-3" />
+
+<div class="header-buffer ui vertical segment h-250"></div>
+
+<div class="ui center aligned container vehicle-stat-header">
+  <h1 class="white" id="vin"><%= @vehicle.vin %></h1>
+</div>
+
+<div class="ui container" id="tab-form-container">
+  <div class="ui top attached secondary pointing menu">
+    <div class="active item" id="specs-tab">VEHICLE SPECS</div>
+    <div class="item" id="maint-tab">MAINTENANCE ITEMS</div>
+  </div>
+  <div class="ui bottom attached active tab segment" id="specs-list">
+  </div>
+  <div class="ui bottom attached tab segment" id="maint-list">
+  </div>
+</div>
+
+<%= render partial: 'layouts/footer' %>
