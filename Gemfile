@@ -16,6 +16,7 @@ gem 'hurley'
 gem 'vcr'
 gem 'newrelic_rpm'
 gem 'paloma'
+gem 'sidekiq'
 
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'omniauth-automatic'

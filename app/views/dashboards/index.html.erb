@@ -1,3 +1,4 @@
+<%= provide(:title, "Dashboard") %>
 <% cache("background") do %>
   <%= render partial: 'layouts/nav' %>
   <body class="lykan-background" />
@@ -5,10 +6,12 @@
   <div class="header-buffer ui vertical segment h-350"></div>
 <% end %>
 
-<% @vehicles.each do |vehicle| %>
-  <% @vehicle = vehicle %>
-  <%= render 'shared/vehicle_stats', {locals: @vehicle} %>
-<% end %>
+<%# <% @vehicles.each do |vehicle| %1> %>
+<%#   <% @vehicle = vehicle %1> %>
+<%#   <%= render 'shared/vehicle_stats', {locals: @vehicle} %1> %>
+<%# <% end %1> %>
+
+<%= render partial: 'shared/vehicle_stats' %>
 
 <div class="header-buffer ui vertical segment h-350"></div>
 
