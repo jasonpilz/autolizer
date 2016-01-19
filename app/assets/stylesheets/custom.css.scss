@@ -29,6 +29,18 @@
   padding-bottom: 5px;
 }
 
+#last-trip-fuel-economy {
+  min-height: 56px;
+}
+
+#vehicle-fuel-percent {
+  min-height: 56px;
+}
+
+#vehicle-dtc-count {
+  min-height: 56px;
+}
+
 .footer-stripe {
   background-color: rgba(10,10,10,0.2);
 }
