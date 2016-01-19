@@ -1,3 +1,4 @@
+<%= provide(:title, "Login") %>
 <% cache("background-logo") do %>
   <body class="login-background" />
 
@@ -20,13 +21,9 @@
         </a>
       </div>
     <% else %>
-
-    <% cache("login-button") do %>
-        <a href="<%= login_path %>" id="automatic-button">
-          <img src="<%= asset_path('auth_automatic-login-hover-sm.svg') %>" id="log-in-button" />
-        </a>
-
-      <% end %>
+      <a href="<%= login_path %>" id="automatic-button">
+        <img src="<%= asset_path('auth_automatic-login-hover-sm.svg') %>" id="log-in-button" />
+      </a>
     <% end %>
 
   </div>

@@ -9,8 +9,8 @@ class UserLogsInWithAutomaticTest < ActionDispatch::IntegrationTest
       click_link('automatic-button')
       assert_equal "/dashboard", current_path
       assert page.has_link?("LOGOUT")
-      assert page.has_content?("2012")
-      assert page.has_content?("Odyssey")
+      assert page.has_content?("VEHICLES")
+      assert page.has_content?("TRIPS")
 
       click_link("LOGOUT")
     end

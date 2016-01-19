@@ -64,6 +64,7 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.0)
+    connection_pool (2.2.0)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     daemons (1.2.3)
@@ -182,6 +183,7 @@ GEM
     rake (10.5.0)
     rdoc (4.2.1)
       json (~> 1.4)
+    redis (3.2.2)
     ref (2.0.0)
     rouge (1.10.1)
     rspec-core (3.4.1)
@@ -204,6 +206,10 @@ GEM
     shoulda-context (1.2.1)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
+    sidekiq (4.0.2)
+      concurrent-ruby (~> 1.0)
+      connection_pool (~> 2.2, >= 2.2.0)
+      redis (~> 3.2, >= 3.2.1)
     simplecov (0.11.1)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -281,6 +287,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   semantic-ui-sass!
   shoulda
+  sidekiq
   simplecov
   spring
   therubyracer
