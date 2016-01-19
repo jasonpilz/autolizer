@@ -24,3 +24,6 @@
 
 # Ignore cassettes
 /test/cassettes
+
+# Ignore .env
+.env
