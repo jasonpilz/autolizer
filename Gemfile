@@ -17,6 +17,7 @@ gem 'vcr'
 gem 'newrelic_rpm'
 gem 'paloma'
 gem 'sidekiq'
+gem 'redis'
 
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'omniauth-automatic'
