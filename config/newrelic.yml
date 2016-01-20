@@ -4,7 +4,7 @@
 # overhead.  For more information, visit www.newrelic.com.
 #
 # Generated January 14, 2016
-# 
+#
 # This configuration file is custom generated for Turing_13
 #
 # For full documentation of agent configuration options, please refer to
@@ -16,7 +16,7 @@ common: &default_settings
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
-  app_name: My Application
+  app_name: Autolizer
 
   # To disable the agent regardless of other settings, uncomment the following:
   # agent_enabled: false

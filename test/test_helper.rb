@@ -7,8 +7,21 @@ require 'mocha/mini_test'
 require 'mrspec'
 require 'webmock'
 require 'vcr'
+require 'sidekiq/testing'
+
+Sidekiq::Testing.fake!
 
 SimpleCov.start("rails")
+
+module SidekiqMinitestSupport
+  def after_teardown
+    Sidekiq::Worker.clear_all
+  end
+end
+
+class MiniTest::Unit::TestCase
+    include SidekiqMinitestSupport
+end
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
@@ -17,6 +30,7 @@ class ActiveSupport::TestCase
   VCR.configure do |config|
     config.cassette_library_dir = "test/cassettes"
     config.hook_into :webmock
+    config.allow_http_connections_when_no_cassette = true
   end
 end
 
@@ -69,6 +83,8 @@ end
 DatabaseCleaner.strategy = :transaction
 
 class Minitest::Spec
+  include SidekiqMinitestSupport
+
   def setup
     DatabaseCleaner.start
   end
