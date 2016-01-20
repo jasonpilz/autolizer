@@ -9,7 +9,7 @@ one:
   submodel: MyString
   year: 1
   fuel_grade: MyString
-  user_id: 
+  user_id: 149087659
 
 two:
   vid: MyString
@@ -20,4 +20,4 @@ two:
   submodel: MyString
   year: 1
   fuel_grade: MyString
-  user_id: 
+  user_id: 149087659

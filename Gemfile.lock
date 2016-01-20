@@ -55,6 +55,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -76,6 +78,7 @@ GEM
     execjs (2.6.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
+    ffi (1.9.10)
     figaro (1.1.1)
       thor (~> 0.14)
     globalid (0.3.6)
@@ -189,6 +192,7 @@ GEM
     rspec-core (3.4.1)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
+    rubyzip (1.1.7)
     safe_yaml (1.0.4)
     sass (3.4.21)
     sass-rails (5.0.4)
@@ -200,6 +204,11 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    selenium-webdriver (2.49.0)
+      childprocess (~> 0.5)
+      multi_json (~> 1.0)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
       shoulda-matchers (>= 1.4.1, < 3.0)
@@ -251,6 +260,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
+    websocket (1.2.2)
     what_weve_got_here_is_an_error_to_communicate (0.0.7)
       binding_of_caller (~> 0.7.2)
       interception (~> 0.5)
@@ -286,6 +296,7 @@ DEPENDENCIES
   redis
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  selenium-webdriver
   semantic-ui-sass!
   shoulda
   sidekiq
