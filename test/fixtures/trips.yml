@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  average_kmpl: 9.99
+  vehicle_id: 980190962
+  vehicle_url: MyString
+  started_at: 2016-01-20 14:15:39
+  start_timezone: MyString
+  average_from_epa_kmpl: 9.99
+  fuel_cost_usd: 9.99
+  fuel_volume_l: 9.99
+  tid: MyString
+  distance_m: 9.99
+  ended_at: 2016-01-20 14:15:39
+  end_timezone: MyString
+  user_url: MyString
+  idling_time_s: 1
+  duration_s: 9.99
+  path: MyString
+  start_address: MyString
+  end_address: MyString
+  start_lon: 9.99
+  start_lat: 9.99
+  end_lon: 9.99
+  end_lat: 9.99
+
+two:
+  average_kmpl: 9.99
+  vehicle_id: 980190962
+  vehicle_url: MyString
+  started_at: 2016-01-20 14:15:39
+  start_timezone: MyString
+  average_from_epa_kmpl: 9.99
+  fuel_cost_usd: 9.99
+  fuel_volume_l: 9.99
+  tid: MyString
+  distance_m: 9.99
+  ended_at: 2016-01-20 14:15:39
+  end_timezone: MyString
+  user_url: MyString
+  idling_time_s: 1
+  duration_s: 9.99
+  path: MyString
+  start_address: MyString
+  end_address: MyString
+  start_lon: 9.99
+  start_lat: 9.99
+  end_lon: 9.99
+  end_lat: 9.99

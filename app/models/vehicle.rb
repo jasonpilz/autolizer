@@ -1,5 +1,6 @@
 class Vehicle < ActiveRecord::Base
   belongs_to :user
+  has_many :trips
 
   def self.create_from_api(data, user)
     data.each do |vehicle|
