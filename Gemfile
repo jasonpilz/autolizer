@@ -34,7 +34,7 @@ group :development, :test do
   gem 'mocha'
   gem 'launchy'
   gem 'shoulda'
-  gem 'capybara'
+  gem 'capybara', '~> 2.5.0'
   gem 'byebug'
   gem 'pry'
   gem 'pry-state'
