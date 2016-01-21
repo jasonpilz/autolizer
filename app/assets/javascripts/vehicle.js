@@ -188,29 +188,29 @@ function renderSpecs(specs) {
     + specs.engine.fuelType
     + "</p>"
     + "</div></div></div>" )
-    if (specs.price) {
-      $("#specs-list").append(
-        + "<div class='ui vertical stripe segment'>"
-        + "<div class='ui stackable internally celled grid'>"
-        + "<div class='center aligned row'>"
-        + "<div class='column' id='category-column'>"
-        + "<h3>Pricing</h3>"
-        + "</div>"
-        + "<div class='column' id='specs-column'>"
-        + "<p>Base Invoice: $"
-        + specs.price.baseInvoice.toLocaleString()
-        + "</p>"
-        + "<p>Base MSRP: $"
-        + specs.price.baseMSRP.toLocaleString()
-        + "</p>"
-        + "<p>Used Trade-In: $"
-        + specs.price.usedTradeIn.toLocaleString()
-        + "</p>"
-        + "<p>Used Private Sale: $"
-        + specs.price.usedPrivateParty.toLocaleString()
-        + "</p>"
-        + "</div></div></div>"
-      )
-    }
+    // if (specs.price) {
+    //   $("#specs-list").append(
+    //     + "<div class='ui vertical stripe segment'>"
+    //     + "<div class='ui stackable internally celled grid'>"
+    //     + "<div class='center aligned row'>"
+    //     + "<div class='column' id='category-column'>"
+    //     + "<h3>Pricing</h3>"
+    //     + "</div>"
+    //     + "<div class='column' id='specs-column'>"
+    //     + "<p>Base Invoice: $"
+    //     + specs.price.baseInvoice.toLocaleString()
+    //     + "</p>"
+    //     + "<p>Base MSRP: $"
+    //     + specs.price.baseMSRP.toLocaleString()
+    //     + "</p>"
+    //     + "<p>Used Trade-In: $"
+    //     + specs.price.usedTradeIn.toLocaleString()
+    //     + "</p>"
+    //     + "<p>Used Private Sale: $"
+    //     + specs.price.usedPrivateParty.toLocaleString()
+    //     + "</p>"
+    //     + "</div></div></div>"
+    //   )
+    // }
 }
 
