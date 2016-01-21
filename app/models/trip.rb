@@ -32,4 +32,12 @@ class Trip < ActiveRecord::Base
       end
     end
   end
+
+  def self.average_cost
+    average(:fuel_cost_usd).round(2)
+  end
+
+  def self.average_mpg
+    (average(:average_kmpl) * 2.35214583).round(2)
+  end
 end
