@@ -1,4 +1,5 @@
-$(document).on('page:change', function(event) {
+// $(document).on('page:change', function(event) {
+$(document).ready(function() {
   fetchVehicles()
   fetchLastTrip()
 })
