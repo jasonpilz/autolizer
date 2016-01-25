@@ -1,4 +1,5 @@
-$(document).on('page:change', function(event) {
+// $(document).on('page:change', function(event) {
+$(document).ready(function() {
 
   $('#maint-tab').click(function() {
     $('#maint-tab').addClass('active')

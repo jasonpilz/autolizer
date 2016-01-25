@@ -1,0 +1,15 @@
+<tr>
+  <td>
+    <strong>Start: </strong><%= @trip.started_at.strftime("%m/%d/%Y at %I:%M%p") %><br>
+    <strong>End: </strong><%= @trip.ended_at.strftime("%m/%d/%Y at %I:%M%p") %>
+  </td>
+  <td>
+    <strong>Start: </strong><%= @trip.start_address %><br>
+    <strong>End: </strong><%= @trip.end_address %>
+  </td>
+  <td><%= (@trip.duration_s / 60).round %></td>
+  <td><%= (@trip.distance_m * 0.000621371).round(2) %></td>
+  <td>$ <%= @trip.fuel_cost_usd %></td>
+  <td><%= @trip.fuel_cost_usd %></td>
+  <td><%= (@trip.average_kmpl * 2.35214583).round(2) %></td>
+</tr>

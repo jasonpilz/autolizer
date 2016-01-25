@@ -1,0 +1,77 @@
+<%= provide(:title, "Trips") %>
+<%= render partial: 'layouts/nav' %>
+<body class="trips" />
+
+<div class="header-buffer ui vertical segment h-350"></div>
+<div class="ui center aligned container vehicle-stat-header">
+  <h1 class="white">All Trips</h1>
+</div>
+
+<div class="feature alternate ui stripe vertical segment">
+  <div class="ui three column center aligned divided relaxed stackable stat-row grid container">
+    <div class="row">
+      <div class="column">
+        <div class="ui inverted statistic">
+          <div class="value" id="average-mpg">
+            <%= @ave_mpg %>
+          </div>
+          <div class="label">
+            Average MPG / Trip
+          </div>
+        </div>
+      </div>
+      <div class="column mid-stat">
+        <div class="ui inverted statistic">
+          <div class="value" id="average-fuel-cost-usd">
+            $ <%= @ave_cost %>
+          </div>
+          <div class="label">
+            Average Fuel Cost USD / Trip
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui inverted statistic">
+          <div class="value" id="total-trips">
+            <%= @trips.count %>
+          </div>
+          <div class="label">
+            Trips
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="header-buffer ui vertical segment h-350"></div>
+<div class="ui center aligned container vehicle-stat-header">
+  <h1 class="white">Trip Details</h1>
+</div>
+
+<div class="ui container">
+  <table class="ui celled table" id="trips-table">
+    <thead>
+      <tr>
+      <th>Date / Time</th>
+      <th>Locations</th>
+      <th>Minutes</th>
+      <th>Miles</th>
+      <th>Cost USD</th>
+      <th>Fuel(L)</th>
+      <th>MPG</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @trips.each do |trip|  %>
+        <% @trip = trip %>
+        <%= render 'shared/trip_table_row', {locals: @trip} %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="header-buffer ui vertical segment h-250"></div>
+<%= render 'layouts/footer' %>
+

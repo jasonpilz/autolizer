@@ -15,6 +15,10 @@
   background-color: rgba(255,255,255,0.4);
 }
 
+.ui.vertical.segment {
+  border-bottom: 0px !important;
+}
+
 #feature-stripe {
   padding-bottom: 35px;
 }
@@ -57,6 +61,11 @@
   background-color: rgba(255,255,255,0.4);
 }
 
+#trips-table {
+  background-color: rgba(255,255,255,0.4);
+}
+
+
 #maint-list {
   background-color: rgba(255,255,255,0.4);
 }
@@ -76,7 +85,9 @@
 }
 
 #nav-logo {
-  margin-left: 68px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
   max-height: 130px;
 }
 
@@ -99,14 +110,34 @@
 
 .lykan-background {
   background: image-url("bw_dark_lykan.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .lykan-2-bw {
   background: image-url("lykan-2-bw.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .lykan-3 {
   background: image-url("lykan-3.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.trips {
+  background: image-url("trips.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .clear {
@@ -171,5 +202,6 @@
 
 #top-nav {
   background-color: rgba(10,10,10,0.2);
+  min-height: 7em;
 }
 
