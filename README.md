@@ -4,3 +4,5 @@
 
 # autolizer
 Turing M3 Final solo project working with the automatic API
+
+[Deployed Application (Note: In order to authenicate, an automatic account is needed)](https://autolizer.herokuapp.com/)
